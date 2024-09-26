@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="" href="">
     <title>Data-Dox Dashboard</title>
 </head>
 <body>
@@ -12,12 +13,18 @@
             <h1>Data-Dox Dashboard</h1>
         </div>
         <div class="pfp">
-            <button class="profile-button">
-                <img src="images/profile-picture.png" alt="not-available" class="profile_picture">
+            <button class="profile-button" onclick="toggleDropdown()">
+                <img src="images/png-clipart-computer-icons-man-icon-logo-silhouette-thumbnail.png" class="profile_picture">
             </button>
         </div>
+        <div class="drop-container" id="dropdown">
+            <a href="upload.html"><div class="drop">Home</div></a>
+            <a href=""><div class="drop">About</div></a>
+            <a href=""><div class="drop">Help</div></a>
+            <a href="login.html"><div class="drop" id="bottom-drop">Log Out</div></a>
+        </div>    
     </div>
-    <a href="">
+    <a href="upload.html">
         <div class="f_container">
             <div>
                 <p class="container_text">Upload</p>
@@ -38,5 +45,12 @@
             </div>
         </div>
     </a>
+    <div class="image"><img src="images/WhatsApp Image 2023-09-18 at 15.20.13.jpg" alt=""></div>
+    <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById('dropdown');
+          dropdown.classList.toggle('open');
+        }
+      </script>
 </body>
 </html>
